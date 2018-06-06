@@ -89,6 +89,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="dependeciaservicios\IOSmessage.cs" />
+    <Compile Include="dependeciaservicios\IOSTextVoz.cs" />
+    <Compile Include="dependeciaservicios\ItextVoz.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />

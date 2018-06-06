@@ -12,14 +12,17 @@ namespace DepServices
 		public MainPage()
 		{
 			InitializeComponent();
-            this.btnMessage+=
+            this.btnMessage.Clicked += BtnMessage_Clicked;
             
 		}
 
+
         private async void BtnMessage_Clicked(object sender, EventArgs e)
         {
-            var service = DependencyService.Get<Ip>
-        }
+            var service = DependencyService.Get<IPlatMessage>();
+            var message = service.GetMessage();
+            await DisplayAlert("dependecy service",message, "ok");
         
 	}
 }
+
