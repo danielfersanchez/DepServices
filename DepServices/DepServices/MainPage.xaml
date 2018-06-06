@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DepServices"
+             x:Class="DepServices.MainPage">
+    <StackLayout Margin="20">
+        <Button HeightRequest="50"
+                Text="Message"
+                x:Name="btnMessage"
+                BackgroundColor="Navy"/>
+        <Button HeightRequest="100"
+                Text="Texto a Voz"
+                BackgroundColor="OrangeRed"
+                TextColor="White"/>
+        <Button Text="plataforma"
+                BackgroundColor="CadetBlue"
+                TextColor="White"
+                x:Name="btnPlataforma">
+            <Button.FontSize>
+                <Onplataform x:TypeArguments="x:Double"
+                             IOS="24"
+                             Android="67"/>
+            </Button.FontSize>
+        </Button>
+        <Label x:Name="txtAviso"
+               FontSize="Large"
+               TextColor="Navy"/>
+
+
+    </StackLayout>
+
+</ContentPage>
