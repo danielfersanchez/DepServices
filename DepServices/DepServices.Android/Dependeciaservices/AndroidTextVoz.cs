@@ -26,7 +26,10 @@ namespace DepServices.Droid.Dependeciaservices
             speaker.Speak(toSpeak, QueueMode.Flush, null, null);
         }
 
-       
+        public void OnInit([GeneratedEnum] OperationResult status)
+        {
+            throw new NotImplementedException();
+        }
 
         public void Spek(string text)
         {
